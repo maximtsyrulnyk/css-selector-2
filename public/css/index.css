@@ -1,308 +1,42 @@
-/*:root {
-  background: purple;
+.card {
+  color: black;
 }
-
-html {
-  max-width: 720px;
-  background: blue;
+p {
 }
-body {
-  background: #fff;
-}
-
-* {
-  color: #666;
-}
-
-h1 {
+.card > p {
   color: green;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke: 1px blue;
 }
 
-.box {
-  background: #cfcfcf;
-}
-h1.button {
-  background: red;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(254, 246, 8);
+  -webkit-text-stroke: 1px rgb(255, 0, 166);
+
+  direction: rtl;
 }
 
-h1,
-h2#user,
-button.button#button {
-  color: green;
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+  text-align: justify;
+  letter-spacing: 0.01px;
+}
+span {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline solid red;
 }
 
-#user,
-.user {
-  color: blue;
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
 }
 
-#box > p {
-  color: paleturquoise;
-}
-
-footer > .user {
-  color: palevioletred;
-}
-
-footer > h1 {
-  color: palevioletred;
-}
-
-footer em.child,
-footer div.child {
-  color: rgb(0, 247, 111);
-}
-
-.p-top {
-  background: black;
-}
-
-h1 ~ * > p {
-  background: black;
-}*/
-
-.item {
-  color: green;
-}
-
-.item:last-of-type {
-  color: blue;
-}
-
-.item:only-of-type {
-  color: red;
-}
-
-.item:nth-of-type(3n) {
-  color: rgb(0, 255, 174);
-}
-
-.item:not(p) {
-  color: blueviolet;
-}
-
-p:empty {
-  height: 10px;
-  background: red;
-}
-.input-dark {
-  background: #585858;
-}
-
-.input-dark[required] {
-  background: #ff2a2a;
-}
-.input-dark[type='number'] {
-  background: #16c100;
-}
-
-.small-img[alt~='small'] {
-  height: 500px;
-}
-
-a[rel~='external'] {
-  color: green;
-}
-
-button[class|='btn'] {
-  background: rgb(212, 212, 212);
-}
-
-a[class*='btn'] {
-  background: rgb(243, 35, 35);
-}
-
-a[class*='big'] {
-  background: rgb(6, 3, 196);
-}
-
-.btn::first-letter {
-  color: rgb(48, 33, 255);
-}
-
-.big-text::first-line {
-  color: red;
-}
-
-.input-dark::placeholder {
-  color: green;
-  background: blue;
-}
-
-.before-after::before,
-.before-after::after {
-  content: '$$$';
-  color: green;
-  background: red;
-}
-
-#test:target {
-  color: red;
-}
-.link:link {
-  color: red;
-}
-
-.link:hover {
-  color: green;
-}
-
-.link:active {
-  color: purple;
-}
-
-.card:active {
-  background-color: purple;
-}
-
-input {
-  background-color: gray;
-}
-
-input:focus {
-  background-color: red;
-}
-
-.card:focus-within {
-  background: red;
-}
-
-.card:lang(en) > span::after {
-  content: '(en)';
-}
-
-button {
-  background-color: greenyellow;
-}
-
-button:enabled {
-  background-color: green;
-}
-
-button:disabled {
-  background-color: aqua;
-}
-
-.inp:read-write {
-  background-color: blue;
-}
-
-.inp:read-only {
-  background-color: red;
-}
-
-input[type='checkbox']:checked ~ span {
-  background: red;
-}
-
-.valid:valid {
-  background: yellow;
-}
-
-.valid:invalid {
-  background: goldenrod;
-}
-
-.valid:optional {
-  background: green;
-}
-
-.number:focus {
-  background: gray;
-}
-
-.number:out-of-range {
-  background: red;
-}
-
-.number:in-range {
-  background: green;
-}
-
-.number:invalid {
-  background: yellow;
-}
-
-input:placeholder-shown ~ span {
-  background: pink;
-}
-
-.lesson-four-task-one input button :hover {
-  color: red;
-  background-color: yellow;
-}
-
-.lesson-four-task-two input .link :hover + .title {
-  background-color: green;
-}
-
-.lesson-four-task-three input a.link :visited {
-  color: yellow;
-  background-color: black;
-}
-.lesson-four-task-four a input:link {
-  color: red;
-}
-
-.lesson-four-task-five button input:active {
-  color: blue;
-}
-
-.lesson-four-task-six input:focus {
-  color: orange;
-}
-.lesson-four-task-seven input #target:target {
-  color: white;
-  background-color: green;
-}
-
-.lesson-four-task-eight input #checkbox:checked ~ #target {
-  color: white;
-  background-color: blue;
-}
-
-.lesson-four-task-nine input :lang(uk) {
-  color: blue;
-}
-
-.lesson-four-task-ten input:enabled {
-  background-color: yellow;
-  color: red;
-}
-
-.lesson-four-task-eleven input:disabled {
-  background-color: yellow;
-}
-
-.lesson-four-task-twelve input:read-write {
-  background-color: yellow;
-}
-.lesson-four-task-thirteen input:read-only {
-  background-color: yellow;
-}
-.lesson-four-task-fourteen input:valid {
-  background-color: green;
-}
-.lesson-four-task-fourteen input:invalid {
-  background-color: red;
-}
-.lesson-four-task-fifteen input:optional {
-  background-color: red;
-}
-.lesson-four-task-sixteen input:out-of-range {
-  background-color: red;
-}
-.lesson-four-task-seventeen input:in-range {
-  background-color: green;
-}
-.lesson-four-task-eighteen input:placeholder-shown {
-  background-color: red;
-}
-
-.lesson-four-task-nineteen form input:focus-within {
-  background-color: yellow;
-}
-
-.lesson-four-task-twenty input:invalid {
-  background-color: red;
+pre {
+  tab-size: 5;
 }
