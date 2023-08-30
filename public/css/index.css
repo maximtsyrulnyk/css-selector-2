@@ -58,3 +58,15 @@ span {
 p {
   font-stretch: expanded;
 }
+
+.test {
+  display: none;
+}
+
+.block {
+  display: inline-block;
+  background: rgb(208, 208, 208);
+  margin: auto;
+  width: 100%;
+  padding: 15px;
+}
