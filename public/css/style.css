@@ -11,3 +11,31 @@ h2 {
 h3 {
   color: green;
 }
+
+.card {
+  border: 2px solid blue;
+  border-radius: 15px;
+}
+.card:hover {
+  outline: 2px solid blue;
+  outline-offset: 5px;
+  box-shadow: 5px 5px 10px 1px rgba(116, 169, 255, 0.254);
+}
+.btn {
+  border-radius: 25px;
+}
+.btn:hover {
+  box-shadow: 5px 5px 10px 1px rgba(116, 169, 255, 0.254);
+}
+.header {
+  padding: 24px;
+  border-bottom: 1px solid #dee2e6;
+}
+h1 {
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.201);
+}
+
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid #dee2e6;
+}
